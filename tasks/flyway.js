@@ -240,7 +240,7 @@ module.exports = function(grunt) {
 
                     var parameter = null;
 
-                    for(parameter in Object.keys(options[option])) {
+                    for(parameter in options[option]) {
 
                         flywayCommand += Util.format(' -%s.%s="%s"', option, parameter, options[option][parameter]);
 
